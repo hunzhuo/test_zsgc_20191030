@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD com.example.Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.sugar_lossMapper">
+    <resultMap id="result" type="com.example.demo.entity.sugar_loss">
+        <result property="yyyymm" column="yyyymm" />
+        <result property="sugar_loss" column="sugar_loss" />
+
+    </resultMap>
+
+    <select id="Listsugar_loss" resultMap="result">
+		SELECT yyyymm,sugar_loss FROM test_loss01
+	</select>
+
+
+
+
+</mapper>
